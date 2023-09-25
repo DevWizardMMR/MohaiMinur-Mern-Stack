@@ -1,7 +1,11 @@
+"use client"
+import { Switch } from "@headlessui/react";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const MainNavbar = () => {
+  const [enabled, setEnabled] = useState(false)
+
   const ManuItems = (
     <>
       <li>
@@ -49,13 +53,34 @@ const MainNavbar = () => {
               {ManuItems}
             </ul>
           </div>
-          <Link href="/" className="font-bold">MohaiMinur</Link>
+          <Link href="/" className="font-bold">
+            MohaiMinur
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{ManuItems}</ul>
         </div>
-        <div className="navbar-end">
-          <Link href="/" className="font-Mooli font-bold px-4 py-2 bg-base-200 rounded-md hover:bg-base-300 hover:text-white">Login</Link>
+        <div className="navbar-end gap-5">
+          <Link
+            href="/"
+            className="font-Mooli font-bold px-4 py-2 bg-base-200 rounded-md hover:bg-base-300 hover:text-white"
+          >
+            Login
+          </Link>
+          <Switch
+            checked={enabled}
+            onChange={setEnabled}
+            className={`${
+              enabled ? "bg-blue-600" : "bg-gray-200"
+            } relative inline-flex h-6 w-11 items-center rounded-full`}
+          >
+            <span className="sr-only">Enable notifications</span>
+            <span
+              className={`${
+                enabled ? "translate-x-6" : "translate-x-1"
+              } inline-block h-4 w-4 transform rounded-full bg-white transition`}
+            />
+          </Switch>
         </div>
       </div>
     </div>
