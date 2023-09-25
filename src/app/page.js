@@ -1,8 +1,9 @@
+import MainNavbar from "./ReuseableComponents/MainNavbar";
 
 export default function Home() {
   return (
     <>
-    <h1>Mohaiminur</h1>
+      <MainNavbar />
     </>
-  )
+  );
 }
