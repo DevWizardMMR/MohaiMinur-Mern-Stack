@@ -2,7 +2,7 @@ import Image from "next/image";
 import { FcGraduationCap } from "react-icons/fc";
 import PrimaryButton from "./PrimaryButton";
 import SecondaryButton from "./SecondaryButton";
-import intropic from "../../../public/intropicture.png"
+import intropic from "../../../public/intropicture.png";
 
 const IntroSlider = () => {
   return (
@@ -22,7 +22,12 @@ const IntroSlider = () => {
             <SecondaryButton link="/">Contact with me</SecondaryButton>
           </div>
         </div>
-        <Image className="w-fit h-auto mx-auto order-1 md:order-2" width={300} height={300} src={intropic} />
+        <Image
+          className="w-fit h-auto mx-auto order-1 md:order-2"
+          width={300}
+          height={300}
+          src={intropic}
+        />
       </div>
     </div>
   );
