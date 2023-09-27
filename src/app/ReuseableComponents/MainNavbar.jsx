@@ -53,7 +53,7 @@ const MainNavbar = () => {
               {ManuItems}
             </ul>
           </div>
-          <Link href="/" className="font-bold">
+          <Link href="/" className="font-bold font-Mooli text-2xl">
             MohaiMinur
           </Link>
         </div>
@@ -71,7 +71,7 @@ const MainNavbar = () => {
             checked={enabled}
             onChange={setEnabled}
             className={`${
-              enabled ? "bg-blue-600" : "bg-gray-200"
+              enabled ? "bg-gray-200" : "bg-gray-700"
             } relative inline-flex h-6 w-11 items-center rounded-full`}
           >
             <span className="sr-only">Enable notifications</span>
