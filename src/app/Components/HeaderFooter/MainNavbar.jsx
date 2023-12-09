@@ -12,13 +12,16 @@ const MainNavbar = () => {
         <Link href="/">Home</Link>
       </li>
       <li>
-        <Link href="/">Blog</Link>
+        <Link href="/">Article</Link>
       </li>
       <li>
-        <Link href="/">Protfolio</Link>
+        <Link href="/">Portfolio</Link>
       </li>
       <li>
-        <Link href="/">Contact with me</Link>
+        <Link href="/">services</Link>
+      </li>
+      <li>
+        <Link href="/">Gallery</Link>
       </li>
       <li>
         <Link href="/">About Me</Link>
