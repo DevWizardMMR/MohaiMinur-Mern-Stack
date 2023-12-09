@@ -1,7 +1,7 @@
 import SecondaryButton from "./SecondaryButton";
 import SocialLink from "./SocialLink";
 
-const IntroductonSection = () => {
+const IntroductionSection = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-5 justify-center items-center">
       <div>
@@ -42,4 +42,4 @@ const IntroductonSection = () => {
   );
 };
 
-export default IntroductonSection;
+export default IntroductionSection;
